@@ -246,7 +246,15 @@
         key: '-OdK8VZjw0uffD-s62Jv',
         primaryColor: '#fff',
         container: container,
-        options: {}
+        options: {
+  onServiceAdd: function() {
+    document.getElementById('myContainerId').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
+
       };
     </script>
     <script src="https://d2skjte8udjqxw.cloudfront.net/widget/production/2/polyfills.latest.js"></script>
